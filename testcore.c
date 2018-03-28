@@ -26,6 +26,9 @@ gdb application_name core
 
 int main(){
     char *val;
+    //Incorrect
     memset(val, '\0', sizeof(val));
+    //Correct
+    //memset(&val, '\0', sizeof(val));
     return 0;
 }
